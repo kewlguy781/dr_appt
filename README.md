@@ -4,29 +4,29 @@
 
 Gemfiles
 
-Create model (doctors/clients)
+Create model (doctors/clients) :white_check_mark:
 
-Create Controller (doctors/client)
+Create Controller (doctors/client) :white_check_mark:
 
-Seeding setup
+Seeding setup :white_check_mark:
 
-Review Seeding
+Review Seeding :white_check_mark:
 
-Working on Pages for clients
+Working on Pages for clients 
 
->  index
+>  index :white_check_mark:
 
->  new client
+>  new client :white_check_mark:
 
->  edit client
+>  edit client 
 
 >  delete client
 
 Working on pages for doctors
 
->  index
+>  index :white_check_mark:
 
->  new doctor
+>  new doctor :white_check_mark:
 
 >  edit doctor
 
