@@ -4,6 +4,7 @@ class DoctorsController < ApplicationController
 
   #Index
   def index
+    @doctors = Doctor.all
   end
 
   #Show
@@ -12,9 +13,19 @@ class DoctorsController < ApplicationController
 
   #New
   def new
+    @doctor = Doctor.new
+    render :_form
   end
+  
+  def create
+    @doctor = Doctor.new(doctor_params)
+    if @doctor.save
+      redirect_to doctors_path
+    else
+      render :new
+    end
 
-  #Create
+  end
 
   #Delete/Destroy
 
@@ -23,10 +34,16 @@ class DoctorsController < ApplicationController
   private
 
   # Set up Doctor's (by their ID) and their parameters
+  def set_doctor
+    @doctor = Doctor.find(params[:id])
+  end
+
 
 #set up parameter that is permit to be entered into data
 
-
+def doctor_params
+  params.require(:doctor).permit(:first_name, :last_name, :notes)
+end
 
 
 end

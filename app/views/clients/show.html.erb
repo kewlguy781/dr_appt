@@ -1,2 +1,11 @@
-<h1>Clients#show</h1>
-<p>Find me in app/views/clients/show.html.erb</p>
+<h1>Client <%= @client.first_name %> <%= @client.last_name %></h1>
+<hr />
+<h2>Note:</h2> <%= @client.notes %>
+<ul>
+<!--To do: show appointments here -->
+</ul>
+<br />
+<br />
+<br />
+<!--To do: Edit button here -->
+<%= link_to 'Delete Client', @client, method: :delete, class: "ui red button inverted" %>

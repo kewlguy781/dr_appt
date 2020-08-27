@@ -1,0 +1,19 @@
+<h1><%= @client.id ? "Edit #{@client.first_name}" : "Add New Client" %></h1>
+<hr />
+<%= form_with(model: @client, local: true) do |f| %>
+  <div>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name, required: true, placeholder: "First Name:" %>
+    <br />
+    <br />
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name, required: true, placeholder: "Last Name:" %>
+    <br />
+    <br />
+    <%= f.label :notes %>
+    <%= f.text_field :notes, required: true, placeholder: "Notes:" %>
+    <br />
+    <br />
+  </div>
+    <%= f.submit %>
+<%end%>
