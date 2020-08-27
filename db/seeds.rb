@@ -8,5 +8,18 @@
 require "faker"
 
 #seeding clients here
-
+10.times do
+    user = Client.create(
+      first_name: Faker::Name.first_name,
+      last_name: Faker::Name.last_name,
+      notes: Faker::Marketing.buzzwords,
+    )
+end
 #seeding doctors here
+10.times do
+    user = Doctor.create(
+      first_name: Faker::Name.first_name,
+      last_name: Faker::Name.last_name,
+      notes: Faker::ChuckNorris.fact,
+    )
+end
