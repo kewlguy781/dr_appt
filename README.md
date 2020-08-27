@@ -1,5 +1,6 @@
 # README
-To do list for Jon
+
+## To do list for Jon
 
 Gemfiles
 
@@ -13,23 +14,23 @@ Review Seeding
 
 Working on Pages for clients
 
-index
+  index
 
-new client
+  new client
 
-edit client
+  edit client
 
-delete client
+  delete client
 
 Working on pages for doctors
 
-index
+  index
 
-new doctor
+  new doctor
 
-edit doctor
+  edit doctor
 
-delete doctor
+  delete doctor
 
 Verify everything
 
@@ -45,13 +46,13 @@ Review information and its relationship via console
 
 Working on pages for appointment
 
-index
+  index
 
-new appointments
+  new appointments
 
-edit appointments
+  edit appointments
 
-delete appointents (check and make sure it delete the appointment but not doctor or client)
+  delete appointents (check and make sure it delete the appointment but not doctor or client)
 
 Verify everything
 
