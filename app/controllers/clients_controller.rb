@@ -1,6 +1,6 @@
 class ClientsController < ApplicationController
    #Before action goes here, make sure to set to show/destory. Maybe edit too? 
-  before_action :set_client, only: [:show, :destory, :edit]
+  before_action :set_client, only: [:show, :destroy, :edit]
 
   #Index
   def index
@@ -31,6 +31,11 @@ class ClientsController < ApplicationController
   #Create
 
   #Delete/Destroy
+  def destroy
+    @client.destroy
+    redirect_to clients_path
+  end
+
 
   #Edit
 
@@ -45,4 +50,5 @@ end
 def client_params
   params.require(:client).permit(:first_name, :last_name, :notes)
 end
+
 end
