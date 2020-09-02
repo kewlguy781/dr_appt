@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   root 'clients#index' #for now
 
   resources :doctors
-  resources :clients
+  resources :clients do
+    resources :appts, only: [:index, :new, :create, :destroy]
+    end
 end
